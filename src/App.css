@@ -1,3 +1,4 @@
+/* App.css */
 .App {
   display: flex;
   height: 100vh;
@@ -5,25 +6,25 @@
 
 .sidebar {
   width: 200px;
-  background-color: #f4f4f4;
   padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
+  border-right: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
 }
 
 .draggable-element {
   padding: 10px;
   margin-bottom: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  cursor: pointer;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  cursor: grab;
 }
 
 .canvas {
   flex: 1;
-  background-color: #fff;
-  border: 1px solid #ddd;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  background-color: #fff;
+  border-left: 1px dashed #ccc;
+  overflow-y: auto;
 }
