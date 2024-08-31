@@ -1,5 +1,6 @@
 import React from "react";
 import CheckBox from "./checkbox";
+import Field from "./field";
 
 const Element = ({type}) => {
     switch (type) {
@@ -7,7 +8,9 @@ const Element = ({type}) => {
         return <input type="text" placeholder="Text Input" />;
         case 'checkbox':
             return (
-                <CheckBox></CheckBox>
+                <Field>
+                    <CheckBox/>
+                </Field>
             )
             break;
         default:
